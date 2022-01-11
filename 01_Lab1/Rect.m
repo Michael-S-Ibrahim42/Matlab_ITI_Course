@@ -1,0 +1,12 @@
+line1X = 1 * ones(1, 10);
+line1Y = 0 : 1 : 9;
+line2X = -1 : 0.1 : 1;
+line2Y = 9 * ones(1, 21);
+line3X = -1 * ones(1, 10);
+line3Y = 0 : 1 : 9;
+line4X = -1 : 0.1 : 1;
+line4Y = zeros(1, 21);
+fill([1, 1, -1, -1], [0, 9, 9, 0], 'b');
+% rect = rectangle('Position', [0 0 5 5]);
+xlim([-5 5]);
+ylim([-5 10]);

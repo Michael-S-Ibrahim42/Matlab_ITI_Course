@@ -1,0 +1,10 @@
+subplot(1, 2, 1);
+x = 0: 1: 360;
+y = sind(x);
+plot(x, y, 'r*-');
+hold on;
+axis([0 360 -1 1]);
+z = cosd(x);
+plot(x, z, 'go:');
+xlim([0 360]);
+ylim([-1 1]);
