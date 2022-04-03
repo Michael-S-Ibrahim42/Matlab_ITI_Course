@@ -1,0 +1,52 @@
+function TraceInfoFlag() {
+    this.traceFlag = new Array();
+    this.traceFlag["Task2.c:44c32"]=1;
+    this.traceFlag["Task2.c:45c34"]=1;
+    this.traceFlag["Task2.c:45c37"]=1;
+    this.traceFlag["Task2.c:55c11"]=1;
+    this.traceFlag["Task2.c:59c40"]=1;
+    this.traceFlag["Task2.c:59c64"]=1;
+    this.traceFlag["Task2.c:66c55"]=1;
+    this.traceFlag["Task2.c:80c17"]=1;
+    this.traceFlag["Task2.c:80c42"]=1;
+    this.traceFlag["Task2.c:81c18"]=1;
+    this.traceFlag["Task2.c:81c31"]=1;
+    this.traceFlag["Task2.c:89c20"]=1;
+    this.traceFlag["Task2.c:89c27"]=1;
+    this.traceFlag["Task2.c:89c43"]=1;
+    this.traceFlag["Task2.c:97c32"]=1;
+    this.traceFlag["Task2.c:109c45"]=1;
+}
+top.TraceInfoFlag.instance = new TraceInfoFlag();
+function TraceInfoLineFlag() {
+    this.lineTraceFlag = new Array();
+    this.lineTraceFlag["Task2.c:41"]=1;
+    this.lineTraceFlag["Task2.c:44"]=1;
+    this.lineTraceFlag["Task2.c:45"]=1;
+    this.lineTraceFlag["Task2.c:46"]=1;
+    this.lineTraceFlag["Task2.c:48"]=1;
+    this.lineTraceFlag["Task2.c:51"]=1;
+    this.lineTraceFlag["Task2.c:55"]=1;
+    this.lineTraceFlag["Task2.c:56"]=1;
+    this.lineTraceFlag["Task2.c:59"]=1;
+    this.lineTraceFlag["Task2.c:66"]=1;
+    this.lineTraceFlag["Task2.c:71"]=1;
+    this.lineTraceFlag["Task2.c:79"]=1;
+    this.lineTraceFlag["Task2.c:80"]=1;
+    this.lineTraceFlag["Task2.c:81"]=1;
+    this.lineTraceFlag["Task2.c:89"]=1;
+    this.lineTraceFlag["Task2.c:97"]=1;
+    this.lineTraceFlag["Task2.c:109"]=1;
+    this.lineTraceFlag["Task2.h:40"]=1;
+    this.lineTraceFlag["Task2.h:41"]=1;
+    this.lineTraceFlag["Task2.h:46"]=1;
+    this.lineTraceFlag["Task2.h:47"]=1;
+    this.lineTraceFlag["Task2.h:48"]=1;
+    this.lineTraceFlag["Task2.h:53"]=1;
+    this.lineTraceFlag["Task2.h:56"]=1;
+    this.lineTraceFlag["Task2.h:59"]=1;
+    this.lineTraceFlag["Task2.h:62"]=1;
+    this.lineTraceFlag["Task2.h:65"]=1;
+    this.lineTraceFlag["Task2.h:68"]=1;
+}
+top.TraceInfoLineFlag.instance = new TraceInfoLineFlag();
