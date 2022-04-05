@@ -1,11 +1,11 @@
 /*
- * File: Scheduler.c
+ * File: Topic4_Task.c
  *
- * Code generated for Simulink model 'Scheduler'.
+ * Code generated for Simulink model 'Topic4_Task'.
  *
- * Model version                  : 1.9
+ * Model version                  : 1.11
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Tue Apr  5 20:56:28 2022
+ * C/C++ source code generated on : Tue Apr  5 21:24:00 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -13,39 +13,39 @@
  * Validation result: Not run
  */
 
-#include "Scheduler.h"
-#include "Scheduler_private.h"
+#include "Topic4_Task.h"
+#include "Topic4_Task_private.h"
 
 /* Block states (default storage) */
-DW_Scheduler_T Scheduler_DW;
+DW_Topic4_Task_T Topic4_Task_DW;
 
 /* External outputs (root outports fed by signals with default storage) */
-ExtY_Scheduler_T Scheduler_Y;
+ExtY_Topic4_Task_T Topic4_Task_Y;
 
 /* Real-time model */
-static RT_MODEL_Scheduler_T Scheduler_M_;
-RT_MODEL_Scheduler_T *const Scheduler_M = &Scheduler_M_;
+static RT_MODEL_Topic4_Task_T Topic4_Task_M_;
+RT_MODEL_Topic4_Task_T *const Topic4_Task_M = &Topic4_Task_M_;
 
 /* Model step function */
-void Scheduler_step(void)
+void Topic4_Task_step(void)
 {
   /* Chart: '<Root>/Chart' */
-  if (Scheduler_DW.temporalCounter_i1 < 1U) {
-    Scheduler_DW.temporalCounter_i1++;
+  if (Topic4_Task_DW.temporalCounter_i1 < 1U) {
+    Topic4_Task_DW.temporalCounter_i1++;
   }
 
   /* Gateway: Chart */
   /* During: Chart */
-  if (Scheduler_DW.is_active_c3_Scheduler == 0U) {
+  if (Topic4_Task_DW.is_active_c3_Topic4_Task == 0U) {
     /* Entry: Chart */
-    Scheduler_DW.is_active_c3_Scheduler = 1U;
+    Topic4_Task_DW.is_active_c3_Topic4_Task = 1U;
 
     /* Entry Internal: Chart */
     /* Transition: '<S1>:2' */
-    Scheduler_DW.temporalCounter_i1 = 0U;
+    Topic4_Task_DW.temporalCounter_i1 = 0U;
 
     /* During 'CallFunction': '<S1>:1' */
-  } else if (Scheduler_DW.temporalCounter_i1 >= 1U) {
+  } else if (Topic4_Task_DW.temporalCounter_i1 >= 1U) {
     /* Outputs for Function Call SubSystem: '<Root>/Function-Call Subsystem' */
     /* Outport: '<Root>/Output' incorporates:
      *  Constant: '<Root>/Constant'
@@ -53,37 +53,37 @@ void Scheduler_step(void)
      */
     /* Transition: '<S1>:3' */
     /* Event: '<S1>:4' */
-    Scheduler_Y.Output = Scheduler_P.Constant_Value;
+    Topic4_Task_Y.Output = Topic4_Task_P.Constant_Value;
 
     /* End of Outputs for SubSystem: '<Root>/Function-Call Subsystem' */
-    Scheduler_DW.temporalCounter_i1 = 0U;
+    Topic4_Task_DW.temporalCounter_i1 = 0U;
   }
 
   /* End of Chart: '<Root>/Chart' */
 }
 
 /* Model initialize function */
-void Scheduler_initialize(void)
+void Topic4_Task_initialize(void)
 {
   /* Registration code */
 
   /* initialize error status */
-  rtmSetErrorStatus(Scheduler_M, (NULL));
+  rtmSetErrorStatus(Topic4_Task_M, (NULL));
 
   /* states (dwork) */
-  (void) memset((void *)&Scheduler_DW, 0,
-                sizeof(DW_Scheduler_T));
+  (void) memset((void *)&Topic4_Task_DW, 0,
+                sizeof(DW_Topic4_Task_T));
 
   /* external outputs */
-  Scheduler_Y.Output = 0.0;
+  Topic4_Task_Y.Output = 0.0;
 
   /* SystemInitialize for Chart: '<Root>/Chart' */
-  Scheduler_DW.temporalCounter_i1 = 0U;
-  Scheduler_DW.is_active_c3_Scheduler = 0U;
+  Topic4_Task_DW.temporalCounter_i1 = 0U;
+  Topic4_Task_DW.is_active_c3_Topic4_Task = 0U;
 }
 
 /* Model terminate function */
-void Scheduler_terminate(void)
+void Topic4_Task_terminate(void)
 {
   /* (no terminate code required) */
 }

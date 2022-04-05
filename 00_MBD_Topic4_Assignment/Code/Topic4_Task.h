@@ -1,11 +1,11 @@
 /*
- * File: Scheduler.h
+ * File: Topic4_Task.h
  *
- * Code generated for Simulink model 'Scheduler'.
+ * Code generated for Simulink model 'Topic4_Task'.
  *
- * Model version                  : 1.9
+ * Model version                  : 1.11
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Tue Apr  5 20:56:28 2022
+ * C/C++ source code generated on : Tue Apr  5 21:24:00 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -13,18 +13,18 @@
  * Validation result: Not run
  */
 
-#ifndef RTW_HEADER_Scheduler_h_
-#define RTW_HEADER_Scheduler_h_
+#ifndef RTW_HEADER_Topic4_Task_h_
+#define RTW_HEADER_Topic4_Task_h_
 #include <stddef.h>
 #include <string.h>
-#ifndef Scheduler_COMMON_INCLUDES_
-#define Scheduler_COMMON_INCLUDES_
+#ifndef Topic4_Task_COMMON_INCLUDES_
+#define Topic4_Task_COMMON_INCLUDES_
 #include "rtwtypes.h"
 #include "rtw_continuous.h"
 #include "rtw_solver.h"
-#endif                                 /* Scheduler_COMMON_INCLUDES_ */
+#endif                                 /* Topic4_Task_COMMON_INCLUDES_ */
 
-#include "Scheduler_types.h"
+#include "Topic4_Task_types.h"
 #include "MW_target_hardware_resources.h"
 
 /* Macros for accessing real-time model data structure */
@@ -38,43 +38,43 @@
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  uint8_T is_active_c3_Scheduler;      /* '<Root>/Chart' */
+  uint8_T is_active_c3_Topic4_Task;    /* '<Root>/Chart' */
   uint8_T temporalCounter_i1;          /* '<Root>/Chart' */
-} DW_Scheduler_T;
+} DW_Topic4_Task_T;
 
 /* External outputs (root outports fed by signals with default storage) */
 typedef struct {
   real_T Output;                       /* '<Root>/Output' */
-} ExtY_Scheduler_T;
+} ExtY_Topic4_Task_T;
 
 /* Parameters (default storage) */
-struct P_Scheduler_T_ {
+struct P_Topic4_Task_T_ {
   real_T Constant_Value;               /* Expression: 0
                                         * Referenced by: '<Root>/Constant'
                                         */
 };
 
 /* Real-time Model Data Structure */
-struct tag_RTM_Scheduler_T {
+struct tag_RTM_Topic4_Task_T {
   const char_T *errorStatus;
 };
 
 /* Block parameters (default storage) */
-extern P_Scheduler_T Scheduler_P;
+extern P_Topic4_Task_T Topic4_Task_P;
 
 /* Block states (default storage) */
-extern DW_Scheduler_T Scheduler_DW;
+extern DW_Topic4_Task_T Topic4_Task_DW;
 
 /* External outputs (root outports fed by signals with default storage) */
-extern ExtY_Scheduler_T Scheduler_Y;
+extern ExtY_Topic4_Task_T Topic4_Task_Y;
 
 /* Model entry point functions */
-extern void Scheduler_initialize(void);
-extern void Scheduler_step(void);
-extern void Scheduler_terminate(void);
+extern void Topic4_Task_initialize(void);
+extern void Topic4_Task_step(void);
+extern void Topic4_Task_terminate(void);
 
 /* Real-time Model object */
-extern RT_MODEL_Scheduler_T *const Scheduler_M;
+extern RT_MODEL_Topic4_Task_T *const Topic4_Task_M;
 extern volatile boolean_T stopRequested;
 extern volatile boolean_T runModel;
 
@@ -92,11 +92,11 @@ extern volatile boolean_T runModel;
  *
  * Here is the system hierarchy for this model
  *
- * '<Root>' : 'Scheduler'
- * '<S1>'   : 'Scheduler/Chart'
- * '<S2>'   : 'Scheduler/Function-Call Subsystem'
+ * '<Root>' : 'Topic4_Task'
+ * '<S1>'   : 'Topic4_Task/Chart'
+ * '<S2>'   : 'Topic4_Task/Function-Call Subsystem'
  */
-#endif                                 /* RTW_HEADER_Scheduler_h_ */
+#endif                                 /* RTW_HEADER_Topic4_Task_h_ */
 
 /*
  * File trailer for generated code.
